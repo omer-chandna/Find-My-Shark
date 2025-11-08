@@ -1,12 +1,10 @@
-# 🦈 Find My Shark - Shark Conservation GeoSpatial ML Tool
+# 🦈 Find My Shark - NASA Space Apps 2025 Hackathon
 
-**NASA Space Apps 2025 Hackathon - Sharks From Space challenge**
-
-**Galactic Impact Winner!**
+# Galactic Impact Winner!
 
 ![Find My Shark Dashboard](images/dashboard-screenshot.png)
 
-A modular Python backend that ingests NASA satellite data (PACE, MODIS-Aqua, SWOT) to generate a Foraging Opportunity Index (FOI) for shark foraging hotspots. The system ensures temporal alignment across datasets and visualizes hotspots as overlays on NASA GIBS MODIS True-Color imagery.
+A modular Python Shark Conservation GeoSpatial ML Tool that ingests NASA satellite data (PACE, MODIS-Aqua, SWOT) to generate a Foraging Opportunity Index (FOI) for shark foraging hotspots. The system ensures temporal alignment across datasets and visualizes hotspots as overlays on NASA GIBS MODIS True-Color imagery.
 
 Find My Shark helps combat illegal exploitation and shark finning!
 
