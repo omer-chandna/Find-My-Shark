@@ -1,12 +1,14 @@
-# 🦈 Sharks from Space - Foraging Opportunity Index Backend
+# 🦈 Find My Shark - Foraging Opportunity Index Backend
 
-**NASA Space Apps 2025 - Sharks From Space**
+**NASA Space Apps 2025 Hackathon - Sharks From Space challenge**
 
 **Galactic Impact Winner!**
 
-![Sharks from Space Dashboard](images/dashboard-screenshot.png)
+![Find My Shark Dashboard](images/dashboard-screenshot.png)
 
-A modular Python backend that ingests NASA satellite data (PACE, MODIS-Aqua, SWOT) to generate a Foraging Opportunity Index (FOI) for shark foraging hotspots in Indonesia and Malaysia. The system ensures temporal alignment across datasets and visualizes hotspots as overlays on NASA GIBS MODIS True-Color imagery.
+A modular Python backend that ingests NASA satellite data (PACE, MODIS-Aqua, SWOT) to generate a Foraging Opportunity Index (FOI) for shark foraging hotspots. The system ensures temporal alignment across datasets and visualizes hotspots as overlays on NASA GIBS MODIS True-Color imagery.
+
+Find My Shark helps combat illegal exploitation and shark finning!
 
 ## 🌟 Features
 
