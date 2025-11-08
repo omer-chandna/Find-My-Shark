@@ -1,4 +1,4 @@
-# 🦈 Find My Shark - Foraging Opportunity Index Backend
+# 🦈 Find My Shark - Shark Conservation GeoSpatial ML Tool
 
 **NASA Space Apps 2025 Hackathon - Sharks From Space challenge**
 
