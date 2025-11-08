@@ -1,0 +1,73 @@
+# Sharks from Space - Foraging Opportunity Index Backend
+# NASA Space Apps 2025 - Indonesia-Malaysia Team
+#
+# Core dependencies for satellite data processing and shark foraging analysis
+
+# Core scientific computing
+numpy>=1.21.0
+scipy>=1.7.0
+pandas>=1.3.0
+xarray>=0.20.0
+
+# Geospatial data handling
+netCDF4>=1.5.7
+h5py>=3.1.0
+rasterio>=1.2.0
+geopandas>=0.10.0
+
+# Data visualization
+matplotlib>=3.4.0
+seaborn>=0.11.0
+plotly>=5.0.0
+
+# Interactive mapping (optional but recommended)
+folium>=0.12.0
+branca>=0.4.0
+
+# Map projections and cartography (optional)
+cartopy>=0.20.0
+pyproj>=3.2.0
+
+# Configuration and utilities
+PyYAML>=5.4.0
+requests>=2.25.0
+tqdm>=4.62.0
+
+# Data processing and analysis
+scikit-learn>=1.0.0
+statsmodels>=0.12.0
+
+# Image processing
+Pillow>=8.3.0
+
+# Development and testing (optional)
+pytest>=6.2.0
+pytest-cov>=2.12.0
+black>=21.0.0
+flake8>=3.9.0
+
+# Jupyter notebook support (optional)
+jupyter>=1.0.0
+ipywidgets>=7.6.0
+
+# API development (optional)
+fastapi>=0.68.0
+uvicorn>=0.15.0
+
+# Additional utilities
+python-dateutil>=2.8.0
+pathlib2>=2.3.0
+click>=8.0.0
+
+# Performance optimization (optional)
+numba>=0.53.0
+dask>=2021.6.0
+
+# Data validation (optional)
+pydantic>=1.8.0
+
+# Logging and monitoring
+structlog>=21.1.0
+
+# Environment management
+python-dotenv>=0.19.0

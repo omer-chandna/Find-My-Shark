@@ -1,0 +1,77 @@
+# Sharks from Space - Configuration File
+# NASA Space Apps 2025 - Indonesia-Malaysia Team
+
+# Temporal Configuration
+data:
+  start_date: "2025-03-01"
+  end_date: "2025-03-14"
+  composite_days: 7
+  composite_mode: "mean"  # mean | median | rolling
+  
+# Region of Interest (Coral Triangle)
+region:
+  name: "coral_triangle"
+  bbox: [94.0, -11.0, 142.0, 6.0]  # [lon_min, lat_min, lon_max, lat_max]
+  
+# Target Species Parameters
+species:
+  name: "tropical_pelagic_sharks"
+  preferred_temp: 26.0  # °C
+  temp_tolerance: 2.5   # °C (sigma)
+  
+# Data Sources Configuration
+data_sources:
+  pace:
+    base_url: "https://oceandata.sci.gsfc.nasa.gov/api/file_search/"
+    products: ["L2_OC_OCI", "L3B_OC_OCI"]
+    
+  modis_aqua:
+    base_url: "https://oceandata.sci.gsfc.nasa.gov/ob/getfile/"
+    products: ["MODISA_L3m_CHL", "MODIS_Aqua_L3m_SST_MidIR_8Day", "MODISA_L3m_KD490"]
+    
+  swot:
+    base_url: "https://podaac.jpl.nasa.gov/dataset/SWOT_L2_LR_SSH_1.0"
+    products: ["Ocean_2.0_L2_LR_SSH"]
+    
+  gibs:
+    base_url: "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/"
+    layer: "MODIS_Terra_CorrectedReflectance_TrueColor"
+    
+# Model Parameters
+model:
+  # FOI Coefficients (logistic regression weights)
+  coefficients:
+    b0: 0.0   # intercept
+    b1: 0.3   # thermal suitability
+    b2: 0.25  # productivity proxy
+    b3: 0.25  # twilight access
+    b4: 0.2   # front strength
+    
+  # Derived field parameters
+  derived_fields:
+    alpha: 0.5      # eddy relief coefficient
+    beta1: 0.5      # twilight access - euphotic depth weight
+    beta2: 0.5      # twilight access - EKE weight
+    
+# Grid Configuration
+grid:
+  resolution: 0.1  # degrees
+  projection: "EPSG:4326"
+  
+# Output Configuration
+output:
+  format: "netcdf"  # or "geotiff"
+  compression: "zlib"
+  output_dir: "data/outputs"
+  
+# Visualization Settings
+visualization:
+  opacity: 0.55
+  colormap: "viridis"
+  overlay_bounds: [[-11, 94], [6, 142]]
+  
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/shark_hotspots.log"
